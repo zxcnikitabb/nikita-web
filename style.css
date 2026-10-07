@@ -115,8 +115,7 @@ body {
 .work-preview {
   height: 180px; display: flex; align-items: center; justify-content: center;
   font-size: 3rem; background: linear-gradient(135deg, #2a1e5c, #3b2170);
-}
-.work-preview.work-leyla { background: linear-gradient(135deg, #ffd1dc, #e0c3fc); }
+}work-preview.work-
 .card-work h3 { padding: 20px 24px 6px; font-size: 1.15rem; }
 .card-work p { padding: 0 24px 12px; color: var(--muted); font-size: 0.92rem; }
 .card-work .work-link { display: block; padding: 0 24px 24px; color: var(--accent); font-weight: 700; font-size: 0.9rem; }
