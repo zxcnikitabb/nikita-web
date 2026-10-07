@@ -4,14 +4,17 @@ const observer = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
       entry.target.style.opacity = '1';
       entry.target.style.transform = 'translateY(0)';
+      observer.unobserve(entry.target);
     }
   });
 }, { threshold: 0.1 });
 
-document.querySelectorAll('.card-service, .card-work, .step, .section h2, .section-sub').forEach(el => {
+document.querySelectorAll(
+  '.card-service, .card-work, .step, .section h2, .section-sub, .cta h2, .cta p'
+).forEach(el => {
   el.style.opacity = '0';
   el.style.transform = 'translateY(30px)';
-  el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+  el.style.transition = 'opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1)';
   observer.observe(el);
 });
 
